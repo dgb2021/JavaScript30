@@ -1,0 +1,94 @@
+<h1>checkboxes</h1>
+
+<style>
+
+  html {
+    font-family: sans-serif;
+    background: #ffc600;
+  }
+
+  .inbox {
+    max-width: 400px;
+    margin: 50px auto;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 10px 10px 0 rgba(0,0,0,0.1);
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #F1F1F1;
+  }
+
+  .item:last-child {
+    border-bottom: 0;
+  }
+
+  input:checked + p {
+    background: #F9F9F9;
+    text-decoration: line-through;
+  }
+
+  input[type="checkbox"] {
+    margin: 20px;
+  }
+
+  p {
+    margin: 0;
+    padding: 20px;
+    transition: background 0.2s;
+    flex: 1;
+    font-family:'helvetica neue';
+    font-size: 15px;
+    font-weight: 200;
+    border-left: 1px solid #D1E2FF;
+  }
+
+
+
+</style>
+
+ <div class="inbox">
+    <div class="item">
+      <p>This is an inbox layout.</p>
+      <input type="checkbox">
+    </div>
+    <div class="item">
+      <p>Check one item</p>
+      <input type="checkbox">
+    </div>
+    <div class="item">
+      <p>Hold down your Shift key</p>
+      <input type="checkbox">
+    </div>
+    <div class="item">
+      <p>Check a lower item</p>
+      <input type="checkbox">
+    </div>
+    <div class="item">
+      <p>Everything in between should also be set to checked</p>
+      <input type="checkbox">
+    </div>
+    <div class="item">
+      <p>Try to do it without any libraries</p>
+      <input type="checkbox">
+    </div>
+    <div class="item">
+      <p>Just regular JavaScript</p>
+      <input type="checkbox">
+    </div>
+    <div class="item">
+      <p>Good Luck!</p>
+      <input type="checkbox">
+    </div>
+    <div class="item">
+      <p>Don't forget to tweet your result!</p>
+      <input type="checkbox">
+    </div>
+  </div>
+
+<script>
+
+
+</script>

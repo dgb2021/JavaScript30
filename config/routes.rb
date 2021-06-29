@@ -5,10 +5,9 @@ Rails.application.routes.draw do
   get 'drumkit', to: 'pages#drumkit'
   get 'clock', to: 'pages#clock'
   get 'variables', to: 'pages#variables'
-  get 'cardio', to: 'pages#cardio'
   get 'gallery', to: 'pages#gallery'
   get 'ajax', to: 'pages#ajax'
-  get 'cardiotwo', to: 'pages#cardiotwo'
   get 'canvas', to: 'pages#canvas'
-  get 'tricks', to: 'pages#tricks'
+  get 'checkboxes', to: 'pages#checkboxes'
+  get 'video', to: 'pages#video'
 end

@@ -3,3 +3,47 @@
 
 <%= link_to "Home", root_path  %>
 <%= link_to "Back", index_path  %>
+
+<body>
+
+  <p onClick="makeGreen()">×BREAK×DOWN×</p>
+
+  <script>
+    const dogs = [{ name: 'Snickers', age: 2 }, { name: 'hugo', age: 8 }];
+
+    function makeGreen() {
+      const p = document.querySelector('p');
+      p.style.color = '#BADA55';
+      p.style.fontSize = '50px';
+    }
+
+    // Regular
+    console.log('hello')
+
+    // Interpolated
+    //console.log(`hello i am a ${variable}`);
+
+    // Styled
+    console.log('%c I can style the strong', 'font-size:50px');
+
+    // warning!
+    console.warn('warning');
+
+    // Error :|
+    console.error('error');
+
+    // Info
+
+    // Testing
+
+    // clearing
+
+    // Viewing DOM Elements
+
+    // Grouping together
+
+    // counting
+
+    // timing
+
+  </script>
