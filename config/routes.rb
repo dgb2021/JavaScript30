@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get 'canvas', to: 'pages#canvas'
   get 'checkboxes', to: 'pages#checkboxes'
   get 'video', to: 'pages#video'
+  get 'delegation', to: 'pages#delegation'
   get 'sequence', to: 'pages#sequence'
   get 'scroll', to: 'pages#scroll'
 end
