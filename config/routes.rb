@@ -20,4 +20,14 @@ Rails.application.routes.draw do
   get 'speech', to: 'pages#speech'
   get 'speedometer', to: 'pages#speedometer'
   get 'followlinks', to: 'pages#followlinks'
+  
+  get 'speechsynthesis', to: 'pages#speechsynthesis'
+  get 'stickynav', to: 'pages#stickynav'
+  get 'bubbling', to: 'pages#bubbling'
+  get 'stripedropdown', to: 'pages#stripedropdown'
+  get 'clickanddrag', to: 'pages#clickanddrag'
+  get 'videospeed', to: 'pages#videospeed'
+  get 'countdown', to: 'pages#countdown'
+  get 'whackamole', to: 'pages#whackamole'
+
 end
