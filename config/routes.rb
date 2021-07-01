@@ -13,4 +13,11 @@ Rails.application.routes.draw do
   get 'delegation', to: 'pages#delegation'
   get 'sequence', to: 'pages#sequence'
   get 'scroll', to: 'pages#scroll'
+  get 'mouse', to: 'pages#mouse'
+  get 'sorting', to: 'pages#sorting'
+  get 'reduce', to: 'pages#reduce'
+  get 'webcam', to: 'pages#webcam'
+  get 'speech', to: 'pages#speech'
+  get 'speedometer', to: 'pages#speedometer'
+  get 'followlinks', to: 'pages#followlinks'
 end
