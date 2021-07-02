@@ -1,5 +1,6 @@
-<body>
-<h2>Cool</h2>
+
+
+
 <nav class="top">
   <div class="dropdownBackground">
     <span class="arrow"></span>
@@ -7,7 +8,7 @@
 
   <ul class="cool">
     <li>
-      <a href="#">About Me</a>
+      <a href="#">Slick</a>
       <div class="dropdown dropdown1">
         <div class="bio">
           <img src="https://logo.clearbit.com/wesbos.com">
@@ -16,7 +17,7 @@
       </div>
     </li>
     <li>
-      <a href="#">Courses</a>
+      <a href="#">Dropdown</a>
       <ul class="dropdown courses">
         <li>
           <span class="code">RFB</span>
@@ -57,7 +58,7 @@
       </ul>
     </li>
     <li>
-      <a href="#">Other Links</a>
+      <a href="#">Timing</a>
       <ul class="dropdown dropdown3">
         <li><a class="button" href="http://twitter.com/wesbos">Twitter</a></li>
         <li><a class="button" href="http://facebook.com/wesbos.developer">Facebook</a></li>
@@ -215,10 +216,40 @@
 
 <script>
 
+  const triggers = document.querySelectorAll('.cool > li');
+  const background  = document.querySelector('.dropdownBackground');
+  const nav  = document.querySelector('.top');
+
+  function handleEnter() {
+    this.classList.add('trigger-enter');
+    setTimeout(() => this.classList.contains('trigger-event') && this.classList.add('trigger-event-active'), 150);
+      background.classList.add('open');
+
+    const dropdown = this.querySelector('.dropdown');
+    const dropdownCoords = dropdown.getBoundingClientRect();
+    const navCoords = nav.getBoundingClientRect();
+
+    const coords = {
+      height: dropdownCoords.height,
+      width: dropdownCoords.width,
+      top: dropdownCoords.top - navCoords.top,
+      left: dropdownCoords.left - navCoords.left,
+    };
+
+    background.style.setProperty('width', `${coords.width}px`);
+    background.style.setProperty('height', `${coords.height}px`);
+    background.style.setProperty('transform', `translate(${coords.left}px, ${coords.top}px)`);
+   
+  }
+
+  function handleLeave() {
+    this.classList.remove('trigger-event', 'trigger-enter-active');
+    background.classList.remove('open');
+  }
+
+
+  triggers.forEach(trigger => trigger.addEventListener('mouseenter', handleEnter));
+  triggers.forEach(trigger => trigger.addEventListener('mouseleave', handleLeave));
   
-
-
-
 </script>
 
-</body>
